@@ -20,9 +20,8 @@ const socketio = require("socket.io");
 const io = socketio(server);
 const Chat = require('./models/chat')
 
-
-
-mongoose.connect('mongodb://localhost:27017/twitter')
+// mongodb://localhost:27017/twitter
+mongoose.connect('mongodb+srv://abhay177:twitterclone@cluster0.ybrketj.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{
     console.log("Database Connected");
 })
